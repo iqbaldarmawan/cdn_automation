@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <%= get('head').result(binding) %>
+  <body>
+    <%= get('header').result(binding) %>
+
+    <% errors = [] %>
+
+    <% gid = 'g0' %>
+    <% features = groups.first['features'] %>
+
+    <%= get('scenarios').result(binding) %>
+
+    <main class="<%= options[:color] %> lighten-5">
+      <div class="row">
+
+        <div id="overview" class="col s12 <%= options[:color] %> lighten-5">
+          <%= get('overview').result(binding) %>
+        </div>
+
+        <div id="features" class="col s12 <%= options[:color] %> lighten-5 white-text">
+          <%= get('features').result(binding) %>
+        </div>
+
+        <div id="summary" class="col s12 <%= options[:color] %> lighten-5">
+          <%= get('summary').result(binding) %>
+        </div>
+
+        <div id="errors" class="col s12 <%= options[:color] %> lighten-5">
+          <%= get('errors').result(binding) %>
+        </div>
+      </div>
+    </main>
+
+    <%= get('footer').result(binding) %>
+  </body>
+</html>

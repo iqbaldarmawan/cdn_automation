@@ -1,0 +1,32 @@
+<li class="collection-item step <%= step['status'] %>">
+  <% if step['before'] %>
+      <% step['before'].each do |hook| %>
+          <%= get('hook').result(binding) %>
+      <% end %>
+  <% end %>
+
+  <b><%= step['keyword'] %></b> <%= step['name'] %> (<%= duration(step['duration']) %>)
+
+  <% if step['doc_string'] %>
+     <%= '<br/><pre>' + ERB::Util.html_escape(step['doc_string']['value']) + '</pre>' %>
+  <% end %>
+
+  <% if step['rows'] %>
+      <% step['rows'].each do |row| %>
+          <%= '<br/>| ' %>
+          <% row['cells'].each do |cell| %>
+              <%= cell + ' | ' %>
+          <% end %>
+      <% end %>
+  <% end %>
+
+  <%#step part as hook%>
+  <% hook = step %>
+  <%= get('hook').result(binding) %>
+
+  <% if step['after'] %>
+      <% step['after'].each do |hook| %>
+          <%= get('hook').result(binding) %>
+      <% end %>
+  <% end %>
+</li>

@@ -1,0 +1,203 @@
+[
+  {
+    "uri": "features/features_files/search.feature",
+    "id": "search-vehicle",
+    "keyword": "Feature",
+    "name": "Search vehicle",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@web_chrome",
+        "line": 1
+      },
+      {
+        "name": "@web_firefox",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "search-vehicle;search-vehicle",
+        "keyword": "Scenario",
+        "name": "Search vehicle",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@web_chrome",
+            "line": 1
+          },
+          {
+            "name": "@web_firefox",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.36.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000
+            },
+            "status": "passed",
+            "duration": 33000
+          },
+          {
+            "match": {
+              "location": "capybara-3.36.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000
+            },
+            "status": "passed",
+            "duration": 27000
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2993596000
+            },
+            "status": "passed",
+            "duration": 2993596000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have successfully navigated to the car next door searchpage",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16676642000
+            },
+            "status": "passed",
+            "duration": 16676642000
+          },
+          {
+            "keyword": "When ",
+            "name": "I search location &quot;10 Bayshore Drive, Byron Bay, New South Wales&quot;",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5189103000
+            },
+            "status": "passed",
+            "duration": 5189103000
+          },
+          {
+            "keyword": "And ",
+            "name": "I select month &quot;Dec from date &quot;2 to &quot;4&quot;",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1196317000
+            },
+            "status": "passed",
+            "duration": 1196317000
+          },
+          {
+            "keyword": "And ",
+            "name": "I set times for pickup and return",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12134788000
+            },
+            "status": "passed",
+            "duration": 12134788000
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see the result vehicle on map match with the list",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1848444000
+            },
+            "status": "passed",
+            "duration": 1848444000
+          },
+          {
+            "keyword": "When ",
+            "name": "I open detail vehicle",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8359184000
+            },
+            "status": "passed",
+            "duration": 8359184000
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am on detail page vehicle",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/search_page_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 343373000
+            },
+            "status": "passed",
+            "duration": 343373000
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000
+            },
+            "status": "passed",
+            "duration": 25000
+          },
+          {
+            "match": {
+              "location": "capybara-3.36.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 376915000
+            },
+            "status": "passed",
+            "duration": 376915000
+          }
+        ],
+        "status": "passed",
+        "duration": 49118447000
+      }
+    ],
+    "status": "working",
+    "duration": 49118447000
+  }
+]

@@ -1,0 +1,2 @@
+web_chrome  : --tags @web_chrome PLATFORM_NAME=browser BROWSER=chrome HOST=web
+web_firefox : --tags @web_firefox PLATFORM_NAME=browser BROWSER=firefox HOST=web

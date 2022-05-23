@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem 'rake'
+gem 'rspec'
+gem 'rspec-expectations'
+gem 'spec'
+gem 'cucumber'
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'nokogiri'
+gem 'geckodriver-helper'
+gem 'selenium-webdriver'
+gem 'site_prism'
