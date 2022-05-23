@@ -1,7 +1,7 @@
-I like to use RVM <br />
+use RVM <br />
 using ruby verision (Ruby-2.6.5) <br />
 
-cd into tokopedia_test_automation/ <br />
+cd into cdn_automation/ <br />
 rvm use 2.6.5<br /> 
 bundle install<br />
 
